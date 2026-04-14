@@ -1,10 +1,17 @@
-import Debouncing from "./debouncing/Debouncing";
+// import Debouncing from "./debouncing/Debouncing";
+
+import { Provider } from "react-redux";
+import Counter from "./simpleCounterWithReduxToolkit/counterComponent/Counter";
+import store from "./simpleCounterWithReduxToolkit/store";
 
 const MainComponent = () => {
-  return(
+  return (
     <div>
-      <Debouncing/>
+      <Provider store={store}>
+        <Counter />
+      </Provider>
+      {/* <Debouncing/> */}
     </div>
-  )
-}
+  );
+};
 export default MainComponent;
