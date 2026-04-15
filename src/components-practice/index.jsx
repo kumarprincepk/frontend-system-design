@@ -1,15 +1,16 @@
 // import Debouncing from "./debouncing/Debouncing";
-
-import { Provider } from "react-redux";
-import Counter from "./simpleCounterWithReduxToolkit/counterComponent/Counter";
-import store from "./simpleCounterWithReduxToolkit/store";
+// import { Provider } from "react-redux";
+// import Counter from "./simpleCounterWithReduxToolkit/counterComponent/Counter";
+// import store from "./simpleCounterWithReduxToolkit/store";
+import DynamicButton from "./dynamicButton";
 
 const MainComponent = () => {
   return (
     <div>
-      <Provider store={store}>
+      <DynamicButton/>
+      {/* <Provider store={store}>
         <Counter />
-      </Provider>
+      </Provider> */}
       {/* <Debouncing/> */}
     </div>
   );
