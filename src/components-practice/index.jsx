@@ -2,12 +2,15 @@
 // import { Provider } from "react-redux";
 // import Counter from "./simpleCounterWithReduxToolkit/counterComponent/Counter";
 // import store from "./simpleCounterWithReduxToolkit/store";
-import DynamicButton from "./dynamicButton";
+// import DynamicButton from "./dynamicButton";
+
+import InputSuggestion from "./autoSuggestionSearch";
 
 const MainComponent = () => {
   return (
     <div>
-      <DynamicButton/>
+      <InputSuggestion/>
+      {/* <DynamicButton/> */}
       {/* <Provider store={store}>
         <Counter />
       </Provider> */}
